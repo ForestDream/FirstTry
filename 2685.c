@@ -77,16 +77,16 @@ void main(){
 		char sum_MCXI[9] = "";
 		int tmp = 1000;
 		
-        /* 输入MXCI-string */
+        /* 杈撳叆MXCI-string */
         scanf("%s %s", a_MCXI, b_MCXI);
         
-        /* 转换为十进制，并相加 */
+        /* 杞崲涓哄崄杩涘埗锛屽苟鐩稿姞 */
         a = MCXI_2_DEC(a_MCXI);
 		b = MCXI_2_DEC(b_MCXI);
 		sum = a + b;
         //printf("%d %d %d\n", a, b, sum);
 		
-        /* 和转换为MXCI-string */
+        /* 鍜岃浆鎹负MXCI-string */
 		j = 0; /* index of sum_MCXI[9] */
         for(int i=0; i<4; i++){
 			
@@ -103,7 +103,7 @@ void main(){
 			//printf("%d --- %d --- %s\n", coeff, sum, sum_MCXI);
 		}
 		
-        /* 输出和的MXCI-string表示 */
+        /* 杈撳嚭鍜岀殑MXCI-string琛ㄧず */
         printf("%s\n", sum_MCXI);
     }
 }
